@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8" />
-        <title>👦🏻👦🏼👦🏽👦🏾👦🏿 fetch()</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <header>
-            <h1>JavaScript a secas</h1>
-            <h2></h2>
-                <select>
-                    <option value="todos">Todos</option>
-                    <option value="Gatitos">Gatitos (2024)</option>
-                    <option value="Perritos">Perritos (2023)</option>
-                </select>
-        </header>
+<head>
+    <meta charset="utf-8" />
+    <title>👦🏻👦🏼👦🏽👦🏾👦🏿 fetch()</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>JavaScript a secas</h1>
+        <h2></h2>
+        <select>
+            <option value="todos">Todos</option>
+            <option value="Gatitos">Gatitos (2024)</option>
+            <option value="Perritos">Perritos (2023)</option>
+        </select>
+    </header>
 
-        <main></main>
+    <main></main>
 
-        <script>
-            //unas variables que no varían, que son constantes:
+    <script>
+        // Variables que no varían, que son constantes:
+        const autoria = document.querySelector("h2");
+        const principal = document.querySelector("main");
+        const seleccion = document.querySelector("select");
+        const nombre = "Cony Lagos ⊹₊⟡⋆";
 
-            const autoria = document.querySelector("h2");
+        // Usando template literals
+        autoria.innerHTML = `Por ${nombre}`;
 
-            const principal = document.querySelector("main");
-
-            const seleccion = document.querySelector("select");
-
-            const nombre = "Cony Lagos ⊹₊⟡⋆";
-
-            //noten que hoy uso `` y ${}, en lugar de comillas y concatenaciones
-
-            autoria.innerHTML = `Por ${nombre}`;
-
-            //acá voy por el JSON
-
-            async function astros() {
+        // Función para obtener datos JSON
+        async function astros() {
+            try {
                 const consulta = await fetch("https://raw.githubusercontent.com/conyln/dno096-08/refs/heads/main/datos.json");
                 const data = await consulta.json();
                 console.log(data);
 
-                data.forEach((d,1) => principal.innerHTML += `<div class="${d.signo}"><img src="${d.foto}" title="${d.fecha}"><p><a href="single.html?data=${i}${d.github}">${d.nombre}</a></p>`);
-
-                seleccionables();
-            }
-
-            astros().catch((error) => console.error(error));
-
-            //lo que sigue es una función que ejecuto dentro de astros()
-
-            var valor;
-
-            function seleccionables() {
-                seleccion.addEventListener("change", (e) => {
-                    document.querySelectorAll("div").forEach((t) => t.classList.add("esconde"));
-                    valor = e.target.value;
-                    if (valor !== "todos") {
-                        document.querySelectorAll(`.${valor}`).forEach((t) => t.classList.remove("esconde"));
-                    } else {
-                        document.querySelectorAll("div").forEach((t) => t.classList.remove("esconde"));
-                    }
+                // Iterar sobre los datos y agregar el contenido al main
+                data.forEach((d) => {
+                    principal.innerHTML += `
+                        <div class="${d.signo}">
+                            <img src="${d.foto}" title="${d.fecha}">
+                            <p><a href="single.html?data=${d.github}">${d.nombre}</a></p>
+                        </div>`;
                 });
-            }
-        </script>
-    </body>
-</html>
 
+                // Llamar a la función que maneja el cambio de selección
+                seleccionables();
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        astros();
+
+        // Función que maneja la lógica de la selección
+        function seleccionables() {
+            seleccion.addEventListener("change", (e) => {
+                const valor = e.target.value;
+                document.querySelectorAll("div").forEach((t) => t.classList.add("esconde"));
+
+                if (valor !== "todos") {
+                    document.querySelectorAll(`.${valor}`).forEach((t) => t.classList.remove("esconde"));
+                } else {
+                    document.querySelectorAll("div").forEach((t) => t.classList.remove("esconde"));
+                }
+            });
+        }
+    </script>
+</body>
+</html>
