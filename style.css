@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 html, body {
-    background: linear-gradient(360deg, rgba(42,21,60,1) 2%, rgba(182,154,194,1) 100%);
+    background: linear-gradient(90deg, rgba(255,221,248,1) 0%, rgba(255,169,239,1) 35%, rgba(255,110,160,1) 100%);
     color: rgba(42, 21, 60, 0.5);
     margin: 0;
     padding: 0;
@@ -54,7 +54,7 @@ a {
 }
 
 a:hover {
-    color: #e864c5;
+    color: #ffddf8;
     text-decoration: underline overline;
 }
 
