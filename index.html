@@ -40,7 +40,7 @@
                 const data = await consulta.json();
                 console.log(data);
 
-                data.forEach((d) => principal.innerHTML += `<div class="${d.signo}"><img src="${d.foto}" title="${d.fecha}"><p><a href="${d.github}" target="_blank">${d.nombre}</a></p>`);
+                data.forEach((d,1) => principal.innerHTML += `<div class="${d.signo}"><img src="${d.foto}" title="${d.fecha}"><p><a href="single.html?data=${i}${d.github}">${d.nombre}</a></p>`);
 
                 seleccionables();
             }
