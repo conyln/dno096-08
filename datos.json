@@ -1,0 +1,72 @@
+[
+    {
+        "nombre": "Gatito 1",
+        "fecha": "2024",
+        "signo": "Gatitos",
+        "foto": "https://github.com/conyln/dno096-08/blob/main/1.png",
+        "github": "https://github.com/marrieta1"
+    },
+    {
+        "nombre": "Gatito 2",
+        "fecha": "2024",
+        "signo": "Gatitos",
+        "foto": "https://raw.githubusercontent.com/conyln/dno096-08/refs/heads/main/2.png",
+        "github": "https://github.com/dyubow"
+    },
+    {
+        "nombre": "Gatito 3",
+        "fecha": "2024",
+        "signo": "Perritos",
+        "foto": "https://apod.nasa.gov/apod/image/0004/bluemarble2k.jpg",
+        "github": "https://github.com/ljubedsacalderon"
+    },
+    {
+        "nombre": "Gatito 4",
+        "fecha": "2024",
+        "signo": "Gatitos",
+        "foto": "https://apod.nasa.gov/apod/image/0104/m51_hst.jpg",
+        "github": "https://github.com/angelafernandezs"
+    },
+    {
+        "nombre": "Gatito 5",
+        "fecha": "2024",
+        "signo": "Gatitos",
+        "foto": "https://apod.nasa.gov/apod/image/0109/xtej1118path.jpg",
+        "github": "https://github.com/saragubbins"
+    },
+    {
+        "nombre": "Gatito 6",
+        "fecha": "2024",
+        "signo": "Gatitos",
+        "foto": "https://apod.nasa.gov/apod/image/0108/perseids97_rickjoe.jpg",
+        "github": "https://github.com/terila"
+    },
+    {
+        "nombre": "Gatito 7",
+        "fecha": "2024",
+        "signo": "Gatitos",
+        "foto": "https://apod.nasa.gov/apod/image/9803/dustdt_apollo17.jpg",
+        "github": "https://github.com/franirribarrat"
+    },
+    {
+        "nombre": "Gatito 8",
+        "fecha": "2024",
+        "signo": "Gatitos",
+        "foto": "https://apod.nasa.gov/apod/image/9809/clusters_hst.jpg",
+        "github": "https://github.com/conyln"
+    },
+    {
+        "nombre": "Gatito 9",
+        "fecha": "2024",
+        "signo": "Gatitos",
+        "foto": "https://apod.nasa.gov/apod/image/1009/carinablue_hst.jpg",
+        "github": "https://github.com/nandaamc"
+    },
+    {
+        "nombre": "Gatito 10",
+        "fecha": "2024",
+        "signo": "Gatitos",
+        "foto": "https://apod.nasa.gov/apod/image/0102/hubblex_hst.jpg",
+        "github": "https://github.com/kimccartney"
+    }
+]
