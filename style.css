@@ -64,7 +64,7 @@ a:hover {
 main div{
     width:24%;
     margin:2% 1% 0 0;
-    background:black;
+    background:white;
     display:inline-block;
     vertical-align: bottom;
     overflow: hidden;
@@ -107,5 +107,5 @@ a.boton {
 }
 
 a.boton:hover {
-    background-color: #8AA08B; 
+    background-color: #ffee53; 
 }
