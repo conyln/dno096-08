@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 html, body {
-    background: linear-gradient(90deg, rgba(255,221,248,1) 0%, rgba(255,169,239,1) 35%, rgba(255,110,160,1) 100%);
+    background: linear-gradient(180deg, rgba(255,221,239,1) 0%, rgba(255,136,177,1) 100%);
+
     cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="64" width="64"><text y="26" font-size="26">🍼</text><path  /></svg>'), auto;
     margin: 0;
     padding: 0;
     font-family: "Nunito", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #40a2e4;
     min-height: 100vh;
 
 }
@@ -87,4 +89,23 @@ main div p{
 
 .esconde{
     display: none;
+}
+
+a.boton {
+    display: inline-block;        
+    padding: 10px 20px;           
+    background-color: #3498db;    
+    color: #9dd6fc;                 
+    text-decoration: none;        
+    border-radius: 32px;
+    order: 0.3px solid rgba(255,169,239,1);
+    background: rgba(255,255,255,1);
+    box-shadow: 0px 4px 4px 0px rgba(124, 88, 106, 0.25), 2px 0px 3px 0px rgba(255, 255, 255, 0.40) inset;
+    backdrop-filter: blur(2px);
+    text-align: center;          
+    cursor: pointer;            
+}
+
+a.boton:hover {
+    background-color: #8AA08B; 
 }
